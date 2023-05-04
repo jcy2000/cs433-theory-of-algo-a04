@@ -1,0 +1,130 @@
+****************** Acyclic Graphs ******************
+
+*** Test Longest Path on DAG 1 ***
+
+Topological Order: [0, 2, 1]
+Longest Path Array (from v0): [0, 5, -inf]
+Longest Path Array (from v1): [-inf, 0, -inf]
+Longest Path Array (from v2): [-inf, -5, 0]
+
+*** Test Longest Path on DAG 2 ***
+
+Topological Order: [0, 7, 1, 2, 3, 5, 6, 4]
+Longest Path Array (from v0): [0, 4, 6, 16, 19, 19, 20, -inf]
+Longest Path Array (from v1): [-inf, 0, 2, 12, 15, 15, 16, -inf]
+Longest Path Array (from v2): [-inf, -inf, 0, 10, 13, 13, 14, -inf]
+Longest Path Array (from v3): [-inf, -inf, -inf, 0, 3, 3, 4, -inf]
+Longest Path Array (from v4): [-inf, -inf, -inf, -inf, 0, -inf, -inf, -inf]
+Longest Path Array (from v5): [-inf, -inf, -inf, -inf, -6, 0, -5, -inf]
+Longest Path Array (from v6): [-inf, -inf, -inf, -inf, -1, -inf, 0, -inf]
+Longest Path Array (from v7): [-inf, -inf, -inf, -inf, 11, -inf, 12, 0]
+
+*** Count Number of Odd & Even Edges Path on DAG 1 ***
+
+Number of even length paths (from v0): [1, 0, 0]
+Number of odd length paths (from v0):  [0, 1, 0]
+
+Number of even length paths (from v1): [0, 1, 0]
+Number of odd length paths (from v1):  [0, 0, 0]
+
+Number of even length paths (from v2): [0, 0, 1]
+Number of odd length paths (from v2):  [0, 1, 0]
+
+*** Count Number of Odd & Even Edges Path on DAG 2 ***
+
+Number of even length paths (from v0): [1, 0, 1, 1, 4, 1, 2, 0]
+Number of odd length paths (from v0):  [0, 1, 1, 1, 4, 1, 2, 0]
+
+Number of even length paths (from v1): [0, 1, 0, 1, 3, 0, 1, 0]
+Number of odd length paths (from v1):  [0, 0, 1, 0, 1, 1, 1, 0]
+
+Number of even length paths (from v2): [0, 0, 1, 0, 1, 1, 1, 0]
+Number of odd length paths (from v2):  [0, 0, 0, 1, 3, 0, 1, 0]
+
+Number of even length paths (from v3): [0, 0, 0, 1, 2, 0, 1, 0]
+Number of odd length paths (from v3):  [0, 0, 0, 0, 1, 1, 1, 0]
+
+Number of even length paths (from v4): [0, 0, 0, 0, 1, 0, 0, 0]
+Number of odd length paths (from v4):  [0, 0, 0, 0, 0, 0, 0, 0]
+
+Number of even length paths (from v5): [0, 0, 0, 0, 1, 1, 0, 0]
+Number of odd length paths (from v5):  [0, 0, 0, 0, 1, 0, 1, 0]
+
+Number of even length paths (from v6): [0, 0, 0, 0, 0, 0, 1, 0]
+Number of odd length paths (from v6):  [0, 0, 0, 0, 1, 0, 0, 0]
+
+Number of even length paths (from v7): [0, 0, 0, 0, 1, 0, 0, 1]
+Number of odd length paths (from v7):  [0, 0, 0, 0, 0, 0, 1, 0]
+
+****************** Bellman-Ford ******************
+
+*** Graph 1 ***
+
+Distances from v0: [0, 2, 7, 4, -2]
+Distances from v1: [-2, 0, 5, 2, -4]
+Distances from v2: [-7, -5, 0, -3, -9]
+Distances from v3: [-4, -2, 3, 0, -6]
+Distances from v4: [2, 4, 9, 6, 0]
+
+*** Graph 2 ***
+
+Has a negative cycle.
+
+*** Graph 3 ***
+
+Distances from v0: [0, inf, inf, inf, inf, inf]
+Distances from v1: [-1, 0, inf, inf, inf, inf]
+Distances from v2: [0, 1, 0, inf, inf, inf]
+Distances from v3: [-10, -9, -10, 0, inf, inf]
+Distances from v4: [-15, -14, -15, -5, 0, inf]
+Distances from v5: [-16, -15, -16, -6, -1, 0]
+
+****************** Dijkstra ******************
+
+*** Graph 1 ***
+
+Distance array (from v0): [0, 10, 10, 3, 5, inf, 10]
+Distance array (from v1): [17, 0, 0, 5, 7, inf, 12]
+Distance array (from v2): [17, 27, 0, 20, 22, inf, 27]
+Distance array (from v3): [34, 44, 17, 0, 2, inf, 7]
+Distance array (from v4): [inf, inf, inf, inf, 0, inf, inf]
+Distance array (from v5): [inf, inf, inf, inf, 3, 0, 2]
+Distance array (from v6): [inf, inf, inf, inf, inf, inf, 0]
+
+*** Graph 2 ***
+
+Distance array (from v0): [0, 10, 10, 12, 1, 8, 19]
+Distance array (from v1): [5, 0, 0, 2, 6, 11, 9]
+Distance array (from v2): [5, 15, 0, 2, 6, 11, 9]
+Distance array (from v3): [3, 13, 13, 0, 4, 9, 7]
+Distance array (from v4): [inf, inf, inf, inf, 0, 7, inf]
+Distance array (from v5): [inf, inf, inf, inf, inf, 0, inf]
+Distance array (from v6): [inf, inf, inf, inf, inf, 2, 0]
+
+****************** APSP algorithms ******************
+
+*** Graph 1 Distance Matrix (using Johnson) ***
+
+[0, 2, 7, 4, -2]
+[-2, 0, 5, 2, -4]
+[-7, -5, 0, -3, -9]
+[-4, -2, 3, 0, -6]
+[2, 4, 9, 6, 0]
+
+*** Graph 2 Distance Matrix (using Johnson) ***
+
+[0, -1, -1, 8, -2, 0]
+[12, 0, 0, 15, 5, 7]
+[12, 6, 0, 15, 5, 7]
+[-3, -9, -9, 0, -10, -8]
+[7, 6, 6, 15, 0, 7]
+[5, 4, 4, 13, -2, 0]
+
+*** Graph 3 ***
+
+Has a negative cycle.
+
+****************** DJP ******************
+
+MST has weight 37
+The edges are: [<0, 1, 4>, <5, 2, 4>, <2, 3, 7>, <3, 4, 9>, <6, 5, 2>, <7, 6, 1>, <0, 7, 8>, <2, 8, 2>]
