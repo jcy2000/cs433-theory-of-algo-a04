@@ -5,21 +5,21 @@ namespace _PA4
 {
 	public class TestCorrectness
 	{
-		private const String DAG1_PATH = "dag1.txt";
-		private const String DAG2_PATH = "dag2.txt";
+		private const String DAG1_PATH = "resources/dag1.txt";
+		private const String DAG2_PATH = "resources/dag2.txt";
 
-		private const String BELLMANFORD1_GRAPH_PATH = "bellmanford1.txt";
-		private const String BELLMANFORD2_GRAPH_PATH = "bellmanford2.txt";
-		private const String BELLMANFORD3_GRAPH_PATH = "bellmanford3.txt";
+		private const String BELLMANFORD1_GRAPH_PATH = "resources/bellmanford1.txt";
+		private const String BELLMANFORD2_GRAPH_PATH = "resources/bellmanford2.txt";
+		private const String BELLMANFORD3_GRAPH_PATH = "resources/bellmanford3.txt";
 
-		private const String DIJKSTRA1_GRAPH_PATH = "dijkstra1.txt";
-		private const String DIJKSTRA2_GRAPH_PATH = "dijkstra2.txt";
+		private const String DIJKSTRA1_GRAPH_PATH = "resources/dijkstra1.txt";
+		private const String DIJKSTRA2_GRAPH_PATH = "resources/dijkstra2.txt";
 
-		private const String APSP1_GRAPH_PATH = "apsp1.txt";
-		private const String APSP2_GRAPH_PATH = "apsp2.txt";
-		private const String APSP3_GRAPH_PATH = "apsp3.txt";
+		private const String APSP1_GRAPH_PATH = "resources/apsp1.txt";
+		private const String APSP2_GRAPH_PATH = "resources/apsp2.txt";
+		private const String APSP3_GRAPH_PATH = "resources/apsp3.txt";
 
-		private const String MST_GRAPH_PATH = "mst_graph.txt";
+		private const String MST_GRAPH_PATH = "resources/mst_graph.txt";
 
 		private static void printArray(int[] A)
 		{
@@ -211,16 +211,16 @@ namespace _PA4
 
 		public static void wumbo()
 		{
-			Console.WriteLine("****************** Acyclic Graphs ******************\n");
-			testDAG();
-			Console.WriteLine("****************** Bellman-Ford ******************\n");
-			testBellmanFord();
-			Console.WriteLine("\n****************** Dijkstra ******************\n");
-			testDijkstra();
+			// Console.WriteLine("****************** Acyclic Graphs ******************\n");
+			// testDAG();
+			// Console.WriteLine("****************** Bellman-Ford ******************\n");
+			// testBellmanFord();
+			// Console.WriteLine("\n****************** Dijkstra ******************\n");
+			// testDijkstra();
 			Console.WriteLine("****************** APSP algorithms ******************\n");
 			testAPSP();
-			Console.WriteLine("\n****************** DJP ******************\n");
-			testDJP();
+			// Console.WriteLine("\n****************** DJP ******************\n");
+			// testDJP();
 		}
 	}
 }

@@ -4,7 +4,7 @@ using static _PA4.TestCorrectness;
 namespace _PA4
 {
     public class Program {
-        public static void main(String[] args) {
+        public static void Main(String[] args) {
             wumbo();
         }
     }

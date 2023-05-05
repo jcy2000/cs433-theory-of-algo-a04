@@ -11,7 +11,8 @@ namespace _PA4
 		}
 
 		public List<Edge> execute()
-		{ // complete this function
+		{   // complete this function
+			return null;
 		}
 	}
 }
