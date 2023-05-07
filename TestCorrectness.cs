@@ -217,10 +217,10 @@ namespace _PA4
 			// testBellmanFord();
 			// Console.WriteLine("\n****************** Dijkstra ******************\n");
 			// testDijkstra();
-			Console.WriteLine("****************** APSP algorithms ******************\n");
-			testAPSP();
-			// Console.WriteLine("\n****************** DJP ******************\n");
-			// testDJP();
+			// Console.WriteLine("****************** APSP algorithms ******************\n");
+			// testAPSP();
+			Console.WriteLine("\n****************** DJP ******************\n");
+			testDJP();
 		}
 	}
 }

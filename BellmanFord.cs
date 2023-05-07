@@ -48,19 +48,19 @@ namespace _PA4
 			}
 			
 			// Loop through vertices again
-				for (int j = 0; j < numVertices; j++) {
-					// Loop through each edge that goes out from current vertex j
-					foreach (Edge e in adjList[j]) {
-						// If the distance of the source vertex hasn't been memorized yet
-						if (dist[e.src] == Int32.MaxValue)
-							continue;
+			for (int j = 0; j < numVertices; j++) {
+				// Loop through each edge that goes out from current vertex j
+				foreach (Edge e in adjList[j]) {
+					// If the distance of the source vertex hasn't been memorized yet
+					if (dist[e.src] == Int32.MaxValue)
+						continue;
 
-						// If the new distance is less than what's memorized, then that means we have a negative cycle.
-						int newDist = dist[e.src] + e.weight;
-						if (newDist < dist[e.dest])
-							return null;
-					}
+					// If the new distance is less than what's memorized, then that means we have a negative cycle.
+					int newDist = dist[e.src] + e.weight;
+					if (newDist < dist[e.dest])
+						return null;
 				}
+			}
 
 			return dist;
 		}
